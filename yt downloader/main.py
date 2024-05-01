@@ -8,7 +8,7 @@ def startDownload():
         ytObject = YouTube(ytLink, on_progress_callback= on_progress)
         video = ytObject.streams.get_highest_resolution()
         ytObject.streams
-        title.configure(text = ytObject.title, text_color = "blue")
+        title.configure(text = ytObject.title, text_color = "white")
         finishLabel.configure(text = "")
         video.download()
         finishLabel.configure(text = "Download Complete")  
